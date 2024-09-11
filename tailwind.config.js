@@ -1,9 +1,17 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [],
+const config = {
+  content: [
+    './resources/views/**/*.blade.php',
+    './resources/js/**/*.js',
+  ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+      },
+    },
   },
   plugins: [],
-}
+};
 
+module.exports = config;
