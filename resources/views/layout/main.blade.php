@@ -6,7 +6,7 @@
     <meta name="description" content="CV Cipta Prima Engineering">
     @vite('resources/css/app.css')
     <title>CV Cipta Prima Engineering</title>
-    <link rel="icon" href="{{ asset('logo.png') }}">
+    <link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}"> <!-- Pastikan ini sesuai dengan lokasi file CSS Anda -->
     <!-- Include Poppins Font -->
     <style>
