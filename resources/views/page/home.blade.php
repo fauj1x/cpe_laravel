@@ -4,31 +4,26 @@
 
 <div class="bg-white">
 
-<div class="relative w-full h-64 md:h-[500px] lg:h-[750px] " >
+<div class="relative w-full h-screen"> <!-- Mengubah h-64/md:h-[500px]/lg:h-[750px] menjadi h-screen -->
         <div 
-        data-aos="fade-in" data-aos-duration="2000"
-            class="absolute inset-0 bg-no-repeat bg-center bg-cover rounded-[30px] mx-5 "
+            data-aos="fade-in" data-aos-duration="2000"
+            class="absolute inset-0 bg-no-repeat bg-center bg-cover -mt-28"
             style="background-image: url('background1.png');"
-            
         >
             <div class="flex flex-col justify-center items-center h-full">
                 <h1 class="text-white font-bold text-3xl md:text-5xl mb-6 text-center" >
-                    <div class="block mb-2 md:mb-4"  data-aos="fade-down" data-aos-duration="3000">CIPTA</div>
-                    <div class="block" data-aos="fade-down" data-aos-duration="3000"
-                    data-aos-delay="100">
+                    <div class="block mb-2 md:mb-4" data-aos="fade-down" data-aos-duration="3000">CIPTA</div>
+                    <div class="block" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="100">
                         <span class="text-green-500">PRIMA</span> ENGINEERING
                     </div>
-                    <p class="font-medium text-sm md:text-base mt-5 text-center" data-aos="fade-up" data-aos-duration="3000"
-                    data-aos-delay="100">“Strategic Inovation for Best Environtment”</p>
+                    <p class="font-medium text-sm md:text-base mt-5 text-center" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">“Strategic Inovation for Best Environtment”</p>
                 </h1>
                 
                 <div class="flex space-x-4 mt-4">
-                    <button class="px-4 py-2 bg-yellow-600 text-white font-regular rounded-lg hover:bg-yellow-800 transition md:px-6 md:py-3"data-aos="fade-up" data-aos-duration="3000"
-                    data-aos-delay="100">
+                    <button class="px-4 py-2 bg-yellow-600 text-white font-regular rounded-lg hover:bg-yellow-800 transition md:px-6 md:py-3" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
                         TENTANG CPE
                     </button>
-                    <button class="px-4 py-2 border-green-600 border-2 text-green-600 bg-transparent font-regular rounded-lg hover:bg-green-500 hover:text-green-200 transition md:px-6 md:py-3" data-aos="fade-up" data-aos-duration="3000"
-                    data-aos-delay="100">
+                    <button class="px-4 py-2 border-green-600 border-2 text-green-600 bg-transparent font-regular rounded-lg hover:bg-green-500 hover:text-green-200 transition md:px-6 md:py-3" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
                         HUBUNGI
                     </button>
                 </div>
@@ -188,37 +183,41 @@
         class="absolute top-[2320px] left-0 w-[120px] " 
         style="z-index: -1;" />
 
-    <section class="text-black body-font">
-        <div class="container mt-32 px-5 py-24 mx-auto flex flex-wrap">
-            <div class="flex w-full mb-20 flex-wrap">
-                <h1 class="text-center sm:text-2xl text-2xl font-bold title-font text-black w-full mb-4">Our <span class="text-green-500">Experience</span></h1>
-            </div>
-            <div class="flex flex-wrap md:-m-2 -m-1">
-                <div class="flex flex-wrap w-1/2">
-                    <div class="md:p-2 p-1 w-1/2">
-                    <img src="{{ asset('cpe.jpg') }}" alt="cpe" style="width: 500px; height: 300px;" />
-                    </div>
-                    <div class="md:p-2 p-1 w-1/2">
-                    <img src="{{ asset('cpe3.jpg') }}" alt="cpe" style="width: 500px; height: 300px;" />
-                    </div>
-                    <div class="md:p-2 p-1 w-full">
-                    <img src="{{ asset('cpe2bawah.jpg') }}" alt="cpe" style="width: 600px; height: 360px;" />
-                    </div>
+        <section class="text-black body-font">
+    <div class="container mt-32 px-5 py-24 mx-auto flex flex-wrap">
+        <div class="flex w-full mb-20 flex-wrap">
+            <h1 class="text-center sm:text-2xl text-2xl font-bold title-font text-black w-full mb-4">
+                Our <span class="text-green-500">Experience</span>
+            </h1>
+        </div>
+        <div class="flex flex-wrap md:-m-2 -m-1">
+            <div class="flex flex-wrap w-1/2">
+                <div class="md:p-2 p-1 w-1/2">
+                    <img src="{{ asset('cpe.jpg') }}" alt="gallery" class="w-full object-cover h-full object-center block rounded-lg" />
                 </div>
-                <div class="flex flex-wrap w-1/2">
-                    <div class="md:p-2 p-1 w-full">
-                    <img src="{{ asset('cpe4.jpg') }}" alt="cpe" style="width: 600px; height: 300px;" />
-                    </div>
-                    <div class="md:p-2 p-1 w-1/2">
-                    <img src="{{ asset('cpe5.jpg') }}" alt="cpe" style="width: 500px; height: 300px;" />
-                    </div>
-                    <div class="md:p-2 p-1 w-1/2">
-                    <img src="{{ asset('cpe6.jpg') }}" alt="cpe" style="width: 500px; height: 300px;" />
-                    </div>
+                <div class="md:p-2 p-1 w-1/2">
+                    <img src="{{ asset('cpe3.jpg') }}" alt="gallery" class="w-full object-cover h-full object-center block rounded-lg" />
+                </div>
+                <div class="md:p-2 p-1 w-full">
+                    <img src="{{ asset('cpe2bawah.jpg') }}" alt="gallery" class="w-full h-full object-cover object-center block rounded-lg" />
+                </div>
+            </div>
+            <div class="flex flex-wrap w-1/2">
+                <div class="md:p-2 p-1 w-full">
+                    <img src="{{ asset('cpe4.jpg') }}" alt="gallery" class="w-full h-full object-cover object-center block rounded-lg" />
+                </div>
+                <div class="md:p-2 p-1 w-1/2">
+                    <img src="{{ asset('cpe5.jpg') }}" alt="gallery" class="w-full object-cover h-full object-center block rounded-lg" />
+                </div>
+                <div class="md:p-2 p-1 w-1/2">
+                    <img src="{{ asset('cpe6.jpg') }}" alt="gallery" class="w-full object-cover h-full object-center block rounded-lg" />
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
 
 </div>
 @endsection

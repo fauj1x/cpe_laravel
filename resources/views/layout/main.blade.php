@@ -15,19 +15,27 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+        /* Agar konten di bawah navbar tidak tertutup */
+        main {
+            padding-top: 100px; /* Sesuaikan nilai ini dengan tinggi navbar */
+        }
     </style>
 </head>
 <body class="bg-white antialiased">
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <!-- Navbar mengambang -->
+    <header class="bg-white shadow-lg rounded-full fixed top-0 left-0 right-0 z-50 mx-auto my-6 max-w-5xl">
+        <div class="container mx-auto flex flex-wrap p-3 md:p-4 flex-col md:flex-row items-center justify-between">
+            <!-- Logo -->
             <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <img src="{{ asset('logo.png') }}" alt="logo" class="w-13 h-10">
+                <img src="{{ asset('logo.png') }}" alt="logo" class="w-10 h-auto">
             </a>
+            <!-- Menu Button (Mobile) -->
             <button id="menu-toggle" class="md:hidden inline-flex items-center justify-center p-2 text-gray-500 hover:text-black focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
+            <!-- Desktop Menu -->
             <nav id="menu" class="hidden md:flex md:ml-auto md:mr-auto flex-wrap items-center text-base justify-center font-bold">
                 <a href="#" class="mr-5 hover:text-black text-gray-700">Beranda</a>
                 <a href="#" class="mr-5 hover:text-black text-gray-700">Tentang</a>
@@ -38,7 +46,8 @@
                 <a href="#" class="mr-5 hover:text-black text-gray-700">Kontak</a>
             </nav>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden">
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg rounded-lg p-4 mt-2">
             <nav class="flex flex-col items-center bg-white border-t border-gray-200">
                 <a href="#" class="block py-2 px-4 hover:text-black text-gray-700">Beranda</a>
                 <a href="#" class="block py-2 px-4 hover:text-black text-gray-700">Tentang</a>
@@ -51,7 +60,9 @@
         </div>
     </header>
     
-    @yield('content')
+    <main>
+        @yield('content')
+    </main>
 
     <script>
         const menuToggle = document.getElementById('menu-toggle');
