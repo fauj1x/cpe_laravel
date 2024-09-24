@@ -196,24 +196,24 @@
             <div class="flex flex-wrap md:-m-2 -m-1">
                 <div class="flex flex-wrap w-1/2">
                     <div class="md:p-2 p-1 w-1/2">
-                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/500x300">
+                    <img src="{{ asset('cpe.jpg') }}" alt="cpe" style="width: 500px; height: 300px;" />
                     </div>
                     <div class="md:p-2 p-1 w-1/2">
-                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/501x301">
+                    <img src="{{ asset('cpe3.jpg') }}" alt="cpe" style="width: 500px; height: 300px;" />
                     </div>
                     <div class="md:p-2 p-1 w-full">
-                        <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/600x360">
+                    <img src="{{ asset('cpe2bawah.jpg') }}" alt="cpe" style="width: 600px; height: 360px;" />
                     </div>
                 </div>
                 <div class="flex flex-wrap w-1/2">
                     <div class="md:p-2 p-1 w-full">
-                        <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/601x361">
+                    <img src="{{ asset('cpe4.jpg') }}" alt="cpe" style="width: 600px; height: 300px;" />
                     </div>
                     <div class="md:p-2 p-1 w-1/2">
-                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/502x302">
+                    <img src="{{ asset('cpe5.jpg') }}" alt="cpe" style="width: 500px; height: 300px;" />
                     </div>
                     <div class="md:p-2 p-1 w-1/2">
-                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/503x303">
+                    <img src="{{ asset('cpe6.jpg') }}" alt="cpe" style="width: 500px; height: 300px;" />
                     </div>
                 </div>
             </div>
